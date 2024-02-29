@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HistoryContainer = styled.main`
   flex: 1;
@@ -38,6 +38,23 @@ export const HistoryList = styled.div`
 
       &:last-child {
         border-top-right-radius: 8px;
+        padding-right: 1.5rem;
+      }
+    }
+
+    td {
+      background-color: ${(props) => props.theme['gray-700']};
+      border-top: 4px solid ${(props) => props.theme['gray-800']};
+      padding: 1rem;
+      font-size: 0.875rem;
+      line-height: 1.6;
+
+      &:first-child {
+        width: 50%;
+        padding-left: 1.5rem;
+      }
+
+      &:last-child {
         padding-right: 1.5rem;
       }
     }
